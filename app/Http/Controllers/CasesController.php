@@ -9,7 +9,7 @@ class CasesController extends Controller
     public function index(){
 
         $cases = Cases::latest()->get();
-        return view('cases.index',[
+        return view('case.index',[
             'cases' => $cases
         ]);
 
